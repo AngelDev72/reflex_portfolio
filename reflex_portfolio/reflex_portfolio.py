@@ -10,6 +10,14 @@ class State(rx.State):
     """The app state."""
 
     ...
+#    rx.button(
+#     "Download",
+#     on_click=rx.download(
+#         url="/reflex_banner.png",
+#         filename="different_name_logo.png",
+#     ),
+#     id="download button",
+# )
 
 
 def index() -> rx.Component:
