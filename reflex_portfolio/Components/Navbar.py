@@ -1,5 +1,5 @@
 import reflex as rx
 
-def navbar() -> rx.component:
+def navbar() -> rx.Component:
     pass
     
