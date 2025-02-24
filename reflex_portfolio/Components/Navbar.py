@@ -1,5 +1,14 @@
 import reflex as rx
+from reflex_portfolio.Colors.colors import Colors
 
 def navbar() -> rx.Component:
-    pass
+    return rx.hstack(
+        rx.text(
+            "AngelDev",
+            height="30px"
+        ),
+        position="sticky",
+        z_index="999",
+        bg=Colors.navbar.value
+    )
     

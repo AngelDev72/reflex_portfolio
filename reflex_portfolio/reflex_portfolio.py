@@ -16,11 +16,13 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
+            navbar(),
             rx.hstack(
                 rx.flex(
                 rx.avatar(fallback="AS", radius="full",size="6", color_scheme="cyan"),
                 rx.text("AngelDev", size="7", weight="bold"),
-                spacing="2"
+                spacing="2",
+                padding="10px"
             )
         ),
     )
