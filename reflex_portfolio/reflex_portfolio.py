@@ -5,6 +5,7 @@ import reflex as rx
 from rxconfig import config
 from reflex_portfolio.Colors.colors import Colors
 from reflex_portfolio.Components.Navbar import navbar
+from reflex_portfolio.Components.Footer import Footer
 
 
 class State(rx.State):
@@ -23,7 +24,8 @@ def index() -> rx.Component:
                 rx.text("AngelDev", size="7", weight="bold"),
                 spacing="2",
                 padding="10px"
-            )
+            ),
+            footer()
         ),
     )
 

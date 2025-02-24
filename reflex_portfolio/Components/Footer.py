@@ -4,7 +4,7 @@ from reflex_portfolio.Components.Footer import footer
 
 def Footer() -> rx.Component:
     return rx.container(
-        rx.vstack(
-        
+        rx.hstack(
+        rx.text("Coding from México to the world!")
         )
     )
