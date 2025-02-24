@@ -7,6 +7,7 @@ from reflex_portfolio.Colors.colors import Colors
 from reflex_portfolio.Components.Navbar import navbar
 from reflex_portfolio.Avatar.Avatar import Avatar
 
+
 class State(rx.State):
     """The app state."""
 
