@@ -25,8 +25,16 @@ def index() -> rx.Component:
                 spacing="2",
                 padding="10px"
             ),
-            footer()
+        
         ),
+        rx.flex(
+            rx.box(
+                
+            )
+        ),
+        rx.container (
+            Footer()
+        )
     )
 
 
