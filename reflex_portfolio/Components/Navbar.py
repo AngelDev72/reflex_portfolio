@@ -7,6 +7,7 @@ def navbar() -> rx.Component:
             "AngelDev",
             height="30px"
         ),
+        top="0",
         position="sticky",
         z_index="999",
         bg=Colors.navbar.value

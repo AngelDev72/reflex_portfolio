@@ -6,7 +6,8 @@ from rxconfig import config
 from reflex_portfolio.Colors.colors import Colors
 from reflex_portfolio.Components.Navbar import navbar
 from reflex_portfolio.Components.Footer import Footer
-
+from reflex_portfolio.Components.Heading import Header
+from reflex_portfolio.Components.Avatar import Avatar
 
 class State(rx.State):
     """The app state."""
@@ -17,24 +18,15 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-            navbar(),
-            rx.hstack(
-                rx.flex(
-                rx.avatar(fallback="AS", radius="full",size="6", color_scheme="cyan"),
-                rx.text("AngelDev", size="7", weight="bold"),
-                spacing="2",
-                padding="10px"
-            ),
-        
+        navbar(),
+        rx.box(
+            Avatar(),
+            Header(),
         ),
         rx.flex(
-            rx.box(
-                
-            )
+            rx.text("")
         ),
-        rx.container (
-            Footer()
-        )
+        Footer()
     )
 
 

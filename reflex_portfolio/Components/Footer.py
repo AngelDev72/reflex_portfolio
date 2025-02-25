@@ -6,5 +6,6 @@ def Footer() -> rx.Component:
         rx.hstack(
         rx.text("Coding from México to the world!")
         ),
+        bottom="0",
         bg=Colors.footer.value
     )
