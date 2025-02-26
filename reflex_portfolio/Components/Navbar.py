@@ -4,9 +4,10 @@ from reflex_portfolio.Colors.colors import Colors
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            "AngelDev",
+            "AngelDev 🐍",
             height="30px"
         ),
+        width="",
         top="0",
         position="sticky",
         z_index="999",
