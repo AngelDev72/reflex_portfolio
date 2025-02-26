@@ -5,9 +5,9 @@ def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
             "AngelDev 🐍",
-            height="30px"
         ),
-        width="",
+        height="30px",
+        width="100%",
         top="0",
         position="sticky",
         z_index="999",

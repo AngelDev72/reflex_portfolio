@@ -9,5 +9,8 @@ def Bio() -> rx.Component:
         """I'm passionate about Machine Learning and Data Science. 
         My preffered language for programming is Python,
         but I'm also learning other languages like Rust and Mojo."""
-        )
+        ),
+        max_width="550px",
+        width="100%",
+        spacing="1",
     )

@@ -8,7 +8,7 @@ from reflex_portfolio.Components.Footer import Footer
 from reflex_portfolio.Components.Heading import Header
 from reflex_portfolio.Components.Avatar import Avatar
 from reflex_portfolio.Components.Bio import Bio
-from reflex_portfolio.Components.Body import Body
+
 
 class State(rx.State):
     """The app state."""
@@ -19,21 +19,15 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.vstack(
+        navbar(),
         rx.hstack(
-            navbar()
-            ),
-        rx.flex(
             Avatar(),
             Header(),
+            spacing="1",
+            width="100%",
         ),
-        rx.flex(
-            rx.vstack(
-                Bio(),
-            ),
-        ),
-        Footer(),
-        bg="black",
-        
+        Bio(),
+        Footer()
     )
 
 
