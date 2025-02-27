@@ -20,11 +20,14 @@ def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.vstack(
         navbar(),
-        rx.hstack(
-            Avatar(),
-            Header(),
-            spacing="1",
-            width="100%",
+        rx.flex(
+            rx.hstack(
+                Avatar(),
+                Header(),
+                spacing="1",
+                width="85%",
+                aling_items="center"
+            ),align="center"
         ),
         Bio(),
         Stack(),
