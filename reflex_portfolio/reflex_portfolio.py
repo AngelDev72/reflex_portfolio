@@ -8,7 +8,7 @@ from reflex_portfolio.Components.Footer import Footer
 from reflex_portfolio.Components.Heading import Header
 from reflex_portfolio.Components.Avatar import Avatar
 from reflex_portfolio.Components.Bio import Bio
-
+from reflex_portfolio.Components.Tec_Stack import Stack
 
 class State(rx.State):
     """The app state."""
@@ -27,6 +27,7 @@ def index() -> rx.Component:
             width="100%",
         ),
         Bio(),
+        Stack(),
         Footer()
     )
 
