@@ -7,4 +7,4 @@ def Avatar() -> rx.Component:
         fallback="AS",
         name="Angel Sanchez",
         color_scheme="cyan"
-    )
+    ),

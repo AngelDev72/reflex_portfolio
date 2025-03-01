@@ -18,20 +18,15 @@ class State(rx.State):
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.vstack(
-        navbar(),
-        rx.flex(
-            rx.hstack(
+    return rx.center(
+        rx.vstack(
+            navbar(),
+            rx.flex(
                 Avatar(),
                 Header(),
-                spacing="1",
-                width="85%",
-                aling_items="center"
-            ),align="center"
-        ),
-        Bio(),
-        Stack(),
-        Footer()
+                
+            )
+        )
     )
 
 

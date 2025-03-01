@@ -3,21 +3,33 @@ import reflex as rx
 def Stack() -> rx.Component:
     return rx.center(
         rx.vstack(
-            rx.hstack(
-            rx.text(
-                "Language"
+            rx.box(
+                rx.hstack(
+                    rx.box(
+                        rx.text(
+                            "Language"
+                        ),
+                        rx.vstack()
+                    ),
+                    rx.box(
+                        rx.text(
+                            "Frameworks"
+                        ),
+                        rx.vstack()
+                    ),
+                    rx.box(
+                        rx.text(
+                            "Technologies"
+                        ),
+                        rx.vstack()
+                    )
+                ),
             ),
-            rx.text(
-                "Framework"
-            ),
-            rx.text(
-                "Technology"
-            ),
-            spacer="1",
-            ),
-        ),
-        width="75%"
-    ),
+
+        )
+    )
+
+
 
 def Stack_icon() -> rx.Component:
     return rx.icon()
