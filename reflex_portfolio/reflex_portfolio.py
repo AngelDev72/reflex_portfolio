@@ -4,6 +4,7 @@ import reflex as rx
 
 from rxconfig import config
 from reflex_portfolio.Components.Navbar import Navbar
+from reflex_portfolio.Components.Avatar import *
 
 
 class State(rx.State):
@@ -17,6 +18,8 @@ def index() -> rx.Component:
     return rx.box(
         rx.vstack(
             Navbar(),
+            Angel(),
+            Arturo(),
         )
     )
 
