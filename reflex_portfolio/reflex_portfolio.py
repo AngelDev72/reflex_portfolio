@@ -6,6 +6,8 @@ from rxconfig import config
 from reflex_portfolio.Components.Navbar import Navbar
 from reflex_portfolio.Components.Header import Header
 from reflex_portfolio.Components.Memorium import Memory
+from reflex_portfolio.Components.Bio import Bio
+from reflex_portfolio.Components.Footer import Footer
 
 
 class State(rx.State):
@@ -21,10 +23,10 @@ def index() -> rx.Component:
             Navbar(),
             rx.center(
                 Header(),
-                #Bio(),
             ),
+            Bio(),
             Memory(),
-            #Footer()
+            Footer()
         )
     )
 

@@ -11,7 +11,7 @@ def Angel() -> rx.Component:
         ),
 
 def Arturo() -> rx.Component:
-      return rx.avatar(
+    return rx.avatar(
         src="",
         radius="full",
         size="7",
