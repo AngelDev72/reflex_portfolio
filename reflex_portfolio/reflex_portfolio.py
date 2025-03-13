@@ -19,19 +19,12 @@ def index() -> rx.Component:
     return rx.box(
         rx.vstack(
             Navbar(),
-<<<<<<< HEAD
-            #Angel(),
-            #rx.image(
-            #    src="/workspaces/reflex_portfolio/reflex_portfolio/Img/Yo.jpg"
-            #),
-            Memory(),
-=======
             rx.center(
                 Header(),
-                Bio()
+                #Bio(),
             ),
-            Footer()
->>>>>>> d2ba8c8 (made changes)
+            Memory(),
+            #Footer()
         )
     )
 
