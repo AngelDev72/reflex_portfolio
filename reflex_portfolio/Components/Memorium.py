@@ -12,7 +12,7 @@ def Memory() -> rx.Component:
             rx.text(
                 """This portfolio  is a special thanks
                 to a dear Friend, Colage and excellent Teacher.
-                your lessons  will never be forgotten..."""
+                Your lessons  will never be forgotten..."""
             ),
             rx.text(
                 "R.I.P Arturo Moreno Salazar."

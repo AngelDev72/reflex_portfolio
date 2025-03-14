@@ -8,6 +8,7 @@ def Navbar() -> rx.Component:
         rx.text(
             "AngelDev 🐍"
         ),
+        top="0",
         width="100%",
         background_color=Colors.Navbar.value
     )

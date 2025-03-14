@@ -19,3 +19,8 @@ def Arturo() -> rx.Component:
         name="Arturo Moreno",
         color_scheme="gray"
         )
+
+def example() -> rx.Component:
+    return rx.avatar(
+        src="/Yo.jpg"
+        )
