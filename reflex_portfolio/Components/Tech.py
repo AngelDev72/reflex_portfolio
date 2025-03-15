@@ -1,5 +1,5 @@
 import reflex as rx
-from reflex_portfolio.Components.Image import TecImage
+from reflex_portfolio.Components.Image import Tech_Image as Tech
 
 
 def Tech_Stack() -> rx.Component:
@@ -12,27 +12,59 @@ def Tech_Stack() -> rx.Component:
                             "Language"
                         ),
                         rx.hstack(
-                            rx.image(
-                                src="/Img/Language/python-wordmark.png",
-                                width="50px",
-                                height="auto"
+                            Tech(
+                                "/Img/Language/python-wordmark.png",
+                                "50",
+                                "50"
                             ),
-                            rx.image()
+                            Tech(
+                                "/Img/Language/rust.png",
+                                "50",
+                                "50"
+                            ),
+                            Tech(
+                                "/Img/Language/Mojo.png",
+                                "50",
+                                "55"
+                            )
                         ),
                         rx.hstack(
-                            rx.image(
-                                src="/Img/Language/css3.png"
+                            Tech(
+                                "/Img/Language/css3.png",
+                                "50",
+                                "50"
                             ),
-                            rx.image(
-                                src="/Img/Language/html5.png"
+                            Tech(
+                                "/Img/Language/html5.png",
+                                "50",
+                                "50"
                             )
                         )
                     )
                 ),
                 rx.spacer(),
                 rx.box(
-                    rx.text(
-                        "Framework"
+                    rx.vstack(
+                        rx.text(
+                            "Frameworks"
+                        ),
+                        rx.hstack(
+                            Tech(
+                                "/favicon.ico",
+                                "50",
+                                "50"
+                            ),
+                            Tech(
+                                "/Img/Framework/tensorflow.png",
+                                "50",
+                                "50"
+                            ),
+                            Tech(
+                                "/Img/Framework/pandas.png",
+                                "50",
+                                "50"
+                            )
+                        )
                     ),
                 ),
                 rx.spacer(),

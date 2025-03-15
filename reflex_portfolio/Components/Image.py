@@ -1,6 +1,6 @@
 import reflex as rx
 
-def TecImage(source: str, height: int = None, width: int = None) -> rx.Component:
+def Tech_Image(source: str, height: int = None, width: int = None) -> rx.Component:
     style = {}
     if height:
         style["height"] = f"{height}px"
