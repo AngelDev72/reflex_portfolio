@@ -5,9 +5,17 @@ def Tech_Stack() -> rx.Component:
         rx.vstack(
             rx.hstack(
                 rx.box(
-                    rx.text(
-                        "Language"
-                    ),
+                    rx.vstack(
+                        rx.text(
+                            "Language"
+                        ),
+                        rx.flex(
+                            rx.image(),
+                            rx.image(),
+                            rx.image(),
+                            rx.image()
+                        )
+                    )
                 ),
                 rx.spacer(),
                 rx.box(
