@@ -2,7 +2,7 @@ import reflex as rx
 
 def Angel() -> rx.Component:
     return rx.avatar(
-        src="/workspaces/reflex_portfolio/reflex_portfolio/Img/Yo.jpg",
+        src="/Img/Yo.jpg",
         radius="full",
         size="7",
         fallback="AS",
@@ -12,7 +12,7 @@ def Angel() -> rx.Component:
 
 def Arturo() -> rx.Component:
     return rx.avatar(
-        src="",
+        src="/Img/Arturo.jpg",
         radius="full",
         size="7",
         fallback="AM",
