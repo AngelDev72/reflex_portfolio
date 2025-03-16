@@ -1,13 +1,15 @@
 import reflex as rx
 from reflex_portfolio.Components.Avatar import Angel
+from reflex_portfolio.Components.Image import Link_Image as Link
+
 
 def Header() -> rx.Component:
-    return rx.vstack(
-        Angel(),
-        rx.text(
-            "@AngelDev72"
-            ),
+    return rx.hstack(
         rx.vstack(
-            #rx.i
+            Angel(),
+            rx.text(
+                "@AngelDev72"
+            ),
+
         )
-        )
+    )
