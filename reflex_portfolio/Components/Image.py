@@ -14,4 +14,9 @@ def Link_Image(url: str, src: str, height: int = None, width: int = None) -> rx.
         style["height"] = f"{height}px"
     if width:
         style["width"] = f"{width}px"
-    return rx.link(url=)
+    return rx.link(
+        rx.image(src=src, style=style),
+        href=url,
+        is_external=True,
+        
+    )
