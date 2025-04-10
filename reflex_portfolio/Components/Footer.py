@@ -2,7 +2,7 @@ import reflex as rx
 from reflex_portfolio.Colors.Colors import Colors
 
 def Footer() -> rx.Component:
-    return rx.box(
+    return rx.flex(
         rx.vstack(
             rx.center(
                 rx.text(
@@ -13,5 +13,5 @@ def Footer() -> rx.Component:
         width="100%",
         margin_y="15px",
         bg=Colors.Footer.value,
-        #bottom="0"
+        bottom="0"
     )

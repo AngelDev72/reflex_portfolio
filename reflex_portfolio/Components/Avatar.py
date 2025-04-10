@@ -6,7 +6,6 @@ def Angel() -> rx.Component:
         radius="full",
         size="7",
         fallback="AS",
-        name="Angel Sanchez",
         color_scheme="cyan"
         ),
 
@@ -18,9 +17,4 @@ def Arturo() -> rx.Component:
         fallback="AM",
         name="Arturo Moreno",
         color_scheme="gray"
-        )
-
-def example() -> rx.Component:
-    return rx.avatar(
-        src="/Yo.jpg"
         )
