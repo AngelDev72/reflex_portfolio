@@ -8,7 +8,6 @@ from reflex_portfolio.Components.Header import Header
 from reflex_portfolio.Components.Memorium import Memory
 from reflex_portfolio.Components.Bio import Bio
 from reflex_portfolio.Components.Footer import Footer
-from reflex_portfolio.Components.Avatar import example
 from reflex_portfolio.Components.Tech import Tech_Stack as Tech
 
 class State(rx.State):
@@ -20,19 +19,17 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.box(
-        rx.vstack(
-            Navbar(),
-            rx.center(
+        Navbar(),
+        rx.center(
+            rx.vstack(
                 Header(),
+                Bio(),
+                Tech(),
+                Memory(),
+                ),
             ),
-            Bio(),
-            rx.center(
-                Tech()
-            ),
-            Memory(),
-            Footer()
-        ),
-    max_width="550px"
+            Footer(),
+    max_width="100%"
     )
 
 
