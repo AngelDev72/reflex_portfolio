@@ -28,7 +28,7 @@ def index() -> rx.Component:
                 Memory(),
                 ),
             ),
-            Footer(),
+        Footer(),
     max_width="100%"
     )
 
