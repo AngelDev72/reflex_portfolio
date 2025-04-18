@@ -5,6 +5,7 @@ import reflex as rx
 from rxconfig import config
 from reflex_portfolio.Components.Navbar import Navbar
 from reflex_portfolio.Components.Header import Header
+from reflex_portfolio.Components.Header import Social
 from reflex_portfolio.Components.Memorium import Memory
 from reflex_portfolio.Components.Bio import Bio
 from reflex_portfolio.Components.Footer import Footer
@@ -23,6 +24,7 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 Header(),
+                Social(),
                 Bio(),
                 Tech(),
                 Memory(),

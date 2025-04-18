@@ -12,5 +12,4 @@ def Bio() -> rx.Component:
                 ),
             )
         ),
-        max_width="600px"
     )
