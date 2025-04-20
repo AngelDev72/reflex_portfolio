@@ -9,7 +9,8 @@ from .Components.Header import Social
 from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
-from .Components.Tech import Tech_Stack as Tech
+from .Components.Tech import Stack as Stack
+from .Components.Tech import Image_Stack as Image
 
 class State(rx.State):
     """The app state."""
@@ -26,7 +27,8 @@ def index() -> rx.Component:
                 Header(),
                 Social(),
                 Bio(),
-                Tech(),
+                Stack(),
+                Image(),
                 Memory(),
                 ),
             ),
