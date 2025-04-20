@@ -53,41 +53,28 @@ from reflex_portfolio.Components.Image import Tech_Image as Tech
 #             )
 #         )
 
-def Stack() -> rx.Component:
+def Language() -> rx.Component:
     return rx.vstack(
-        rx.hstack(
-            rx.text(
-                "Language"
-                
+        rx.text(
+            "Language"
+            )
+        rx.flex(
+            Tech(
+                "/Img/Language/python-wordmark.png",
+                "50",
+                "50"
                 ),
-                rx.spacer(spacing="4"),
-            rx.text(
-                "Framework"
+            Tech(
+                "/Img/Language/rust.png",
+                "50",
+                "50"
                 ),
-                rx.spacer(spacing="4"),
-            rx.text(
-                "Technology"
+            Tech(
+                "/Img/Language/Mojo.png",
+                "50",
+                "55"
                 ),
-
-                rx.spacer(spacing="4")
+                flex_wrap="wrap",
+                spacing="2"
             )
         )
-
-def Image_Stack() -> rx.Component:
-    return rx.flex(
-        Tech(
-            "/Img/Language/python-wordmark.png",
-            "50",
-            "50"
-            ),
-        Tech(
-            "/Img/Language/rust.png",
-            "50",
-            "50"
-            ),
-        Tech(
-            "/Img/Language/Mojo.png",
-            "50",
-            "55"
-            )
-        ),
