@@ -2,22 +2,7 @@ import reflex as rx
 from reflex_portfolio.Components.Image import Tech_Image as Tech
 
 
-# def Tech_Stack() -> rx.Component:
-#     return rx.hstack(
-#         rx.text(
-#             "Language"
-#             ),
-#             rx.hstack(
-#                 Tech(
-#                     "/Img/Language/python-wordmark.png",
-#                     "50",
-#                     "50"
-#                     ),
-#                 Tech(
-#                     "/Img/Language/rust.png",
-#                     "50",
-#                     "50"
-#                     ),
+
 #                 Tech(
 #                     "/Img/Language/Mojo.png",
 #                     "50",
@@ -100,5 +85,9 @@ def Image_Stack() -> rx.Component:
             "50",
             "50"
             ),
-        
-        )
+        Tech(
+            "/Img/Language/Mojo.png",
+            "50",
+            "55"
+            )
+        ),
