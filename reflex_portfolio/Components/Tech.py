@@ -1,30 +1,5 @@
 import reflex as rx
-from reflex_portfolio.Components.Image import Tech_Image as Tech
-
-#                     Tech(
-#                         "/favicon.ico",
-#                         "50",
-#                         "50"
-#                         ),
-#                     Tech(
-#                         "/Img/Framework/tensorflow.png",
-#                         "50",
-#                         "50"
-#                         ),
-#                     Tech(
-#                         "/Img/Framework/pandas.png",
-#                         "50",
-#                         "50"
-#                         )
-#                 )
-#                 rx.spacer(),
-#                 rx.box(
-#                     rx.text(
-#                         "Technology"
-#                         )
-#                     )
-#             )
-#         )
+from .Components.Image import Tech_Image as Tech
 
 def Language() -> rx.Component:
     return rx.vstack(
@@ -59,6 +34,7 @@ def Language() -> rx.Component:
                 ),
                 flex_wrap="wrap",
                 spacing="2"
+                #max_width="33%"
             )
         )
 
@@ -67,6 +43,7 @@ def Framework() -> rx.Component:
         rx.text(
             "Frameworks"
             ),
+        rx.flex(
             Tech(
                 "/favicon.ico",
                 "50",
@@ -82,5 +59,43 @@ def Framework() -> rx.Component:
                 "50",
                 "50"
                 ),
-            
+            Tech(
+                "Img/Framework/numpy.png",
+                "50",
+                "50"
+                ),
+            Tech(
+                "/Img/Framework/keras.png",
+                "50",
+                "50"
+                ),
+            Tech(
+                "/Img/Framework/fastapi.png",
+                "50",
+                "50"
+                ),
+                flex_wrap="wrap",
+                spacing="2",
+                #max_width="33%"
+            )
+        )
+
+def Technology() -> rx.Component:
+    return rx.vstack(
+        rx.text(
+            "Technology"
+            ),
+        rx.flex(
+            Tech(
+                "Img/Technology/git.png",
+                "50",
+                "50"
+                ),
+            Tech(
+                "Img/Technology/vsc.png"
+                "50",
+                "50"
+                ),
+                
+            )
         )
