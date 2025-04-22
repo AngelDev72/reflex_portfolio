@@ -10,7 +10,7 @@ from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
 from .Components.Tech import Language as Lang
-from .Components.Tech import Frameworks as Frames
+from .Components.Tech import Framework as Frames
 from .Components.Tech import Technology as Soft
 
 class State(rx.State):
@@ -31,7 +31,6 @@ def index() -> rx.Component:
                 rx.hstack(
                     Lang(),
                     Frames(),
-                    Tecnology(),
                     Soft()
                     ),
                 Memory(),

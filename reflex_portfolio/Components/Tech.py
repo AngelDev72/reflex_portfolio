@@ -1,5 +1,5 @@
 import reflex as rx
-from .Components.Image import Tech_Image as Tech
+from reflex_portfolio.Components.Image import Tech_Image as Tech
 
 def Language() -> rx.Component:
     return rx.vstack(
