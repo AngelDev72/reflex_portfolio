@@ -26,7 +26,9 @@ def index() -> rx.Component:
                 Header(),
                 Social(),
                 Bio(),
-                Lang(),
+                rx.hstack(
+                    Lang(),
+                    )
                 Memory(),
                 ),
             ),
