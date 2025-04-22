@@ -28,7 +28,7 @@ def index() -> rx.Component:
                 Bio(),
                 rx.hstack(
                     Lang(),
-                    )
+                    ),
                 Memory(),
                 ),
             ),

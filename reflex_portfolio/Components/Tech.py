@@ -30,7 +30,7 @@ def Language() -> rx.Component:
     return rx.vstack(
         rx.text(
             "Language"
-            )
+            ),
         rx.flex(
             Tech(
                 "/Img/Language/python-wordmark.png",
@@ -52,7 +52,7 @@ def Language() -> rx.Component:
                 "50",
                 "50"
                 ),
-             Tech(
+            Tech(
                 "/Img/Language/html5.png",
                 "50",
                 "50"
