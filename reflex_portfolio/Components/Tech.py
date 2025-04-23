@@ -87,12 +87,12 @@ def Technology() -> rx.Component:
             ),
         rx.flex(
             Tech(
-                "Img/Technology/git.png",
+                "/Img/Technology/git.png",
                 "50",
                 "50"
                 ),
             Tech(
-                "Img/Technology/vsc.png"
+                "/Img/Technology/vsc.png",
                 "50",
                 "50"
                 ),
