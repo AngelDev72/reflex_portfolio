@@ -96,6 +96,7 @@ def Technology() -> rx.Component:
                 "50",
                 "50"
                 ),
-                
+                flex_wrap="wrap",
+                spacing="2"
             )
         )
