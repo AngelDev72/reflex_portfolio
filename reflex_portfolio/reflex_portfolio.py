@@ -21,7 +21,7 @@ class State(rx.State):
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.box(
+    return rx.container(
         Navbar(),
         rx.center(
             rx.vstack(
@@ -40,6 +40,15 @@ def index() -> rx.Component:
     max_width="100%"
     )
 
+# def Projects() -> rx.Component:
+#     return rx.container(
+#         rx.vstack(
+#             
+#             )
+#         )
+
 
 app = rx.App()
 app.add_page(index)
+#app.add_page(Projects)
+#app.add_page(About)

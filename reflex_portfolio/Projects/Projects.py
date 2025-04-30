@@ -1,8 +1,12 @@
 import reflex as rx
+from .Components.Navbar import Navbar
+from .Components.Avatar import Angel
+
 
 def Project() -> rx.Component:
-    return rx.box(
-        rx.text(
-            "placeholder"
+    return rx.container(
+        Navbar(),
+        rx.vstack(
+            Angel(),
             )
         )
