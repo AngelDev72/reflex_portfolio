@@ -4,14 +4,13 @@ import reflex as rx
 
 from rxconfig import config
 from .Components.Navbar import Navbar
-from .Components.Header import Header
-from .Components.Header import Social
+from .Components.Header import Header, Social
 from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
-from .Components.Tech import Language as Lang
-from .Components.Tech import Framework as Frames
-from .Components.Tech import Technology as Soft
+from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
+from .Routes.Projects.Projects import Projects
+from .Routes.About.About_Me import About
 
 class State(rx.State):
     """The app state."""
@@ -40,15 +39,9 @@ def index() -> rx.Component:
     max_width="100%"
     )
 
-# def Projects() -> rx.Component:
-#     return rx.container(
-#         rx.vstack(
-#             
-#             )
-#         )
 
 
 app = rx.App()
 app.add_page(index)
-#app.add_page(Projects)
-#app.add_page(About)
+app.add_page(Projects)
+app.add_page(About)
