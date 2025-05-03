@@ -9,8 +9,8 @@ from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
-from .Routes.About import About_Me as About
-from .Routes.Projects.Projects import Pymon, EON, ChickNTec
+from .Routes.About.About_Me import About
+#from .Routes.Projects.Projects import Pymon, EON, ChickNTec
 
 class State(rx.State):
     """The app state."""
@@ -43,5 +43,5 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index)
-app.add_page()
+#app.add_page()
 app.add_page(About)
