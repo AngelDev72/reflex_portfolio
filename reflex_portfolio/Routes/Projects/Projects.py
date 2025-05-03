@@ -1,5 +1,9 @@
 import reflex as rx
 
+@rx.page(
+        route="/Projects",
+        title="Projects"
+)
 def Pymon() -> rx.Component:
     return rx.flex(
         rx.vstack(
