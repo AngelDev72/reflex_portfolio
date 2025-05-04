@@ -1,6 +1,6 @@
 import reflex as rx
 from .Colors.Colors import Colors
-from .reflex_portfolio import State 
+from reflex_portfolio.Backend import State 
 
 
 def Navbar() -> rx.Component:

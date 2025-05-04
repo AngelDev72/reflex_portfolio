@@ -11,21 +11,7 @@ from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
 from .About_Me import About
 from .Projects import Projects
-
-class State(rx.State):
-    """The app state."""
-
-    @rx.var
-    def is_home(self) -> bool:
-        return self.router.pathname == "/"
-
-    @rx.var
-    def is_about(self) -> bool:
-        return self.router.pathname == "/about"
-
-    @rx.var
-    def is_projects(self) -> bool:
-        return self.router.pathname == "/projects"
+from reflex_portfolio.Backend import State
 
 
 def index() -> rx.Component:
