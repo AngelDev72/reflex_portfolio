@@ -1,8 +1,12 @@
 import reflex as rx
+from reflex_portfolio.Backend import State
+from .Components.Navbar import Navbar
+from .Components.Footer import Footer
 
 def Projects() -> rx.Component:
     return rx.container(
         rx.vstack(
+            Navbar(),
             rx.box(
                 rx.heading(
                     "Pymon"
@@ -35,6 +39,7 @@ def Projects() -> rx.Component:
                     through real-time monitoring, ticketing systems, and AI-based production optimization.
                     """
                     )
-                )
+                ),
+            Footer(),
             )
         )
