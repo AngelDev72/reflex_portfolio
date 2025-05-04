@@ -1,6 +1,6 @@
 import reflex as rx
+from reflex_portfolio.Backend import State
 from reflex_portfolio.Colors.Colors import Colors
-from reflex_portfolio.Backend import State 
 
 
 def Navbar() -> rx.Component:
@@ -10,15 +10,15 @@ def Navbar() -> rx.Component:
         ),
         rx.spacer(spacing="2"),
         rx.cond(
-            ~State.is_home,
+            State.is_home,
             rx.link("Home", href="/", style={"text_decoration": "none"})
         ),
         rx.cond(
-            ~State.is_about,
+            State.is_about,
             rx.link("About Me", href="/about", style={"text_decoration": "none"})
         ),
         rx.cond(
-            ~State.is_projects,
+            State.is_projects,
             rx.link("Projects", href="/projects", style={"text_decoration": "none"})
         ),
         top="0",
