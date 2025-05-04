@@ -1,7 +1,7 @@
 import reflex as rx
 
 def About() -> rx.Component:
-    return rx.Container(
+    return rx.container(
         rx.vstack(
             rx.box(
                 rx.heading(

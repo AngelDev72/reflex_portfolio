@@ -1,5 +1,5 @@
 import reflex as rx
-from .Colors.Colors import Colors
+from reflex_portfolio.Colors.Colors import Colors
 from reflex_portfolio.Backend import State 
 
 
