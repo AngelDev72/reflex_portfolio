@@ -11,21 +11,18 @@ def Navbar(active_page: str) -> rx.Component:
         rx.spacer(spacing="2"),
         rx.cond(
             active_page=="home",
-            rx.link("Home", href="/", style={"text_decoration": "none"} 
-                if active_page=="home" else{}
-                )
+            rx.link("projects", href="/projects", style={"text_decoration": "none"}),
+            rx.link("About Me", href="/about", style={"text_decoration": "none"})
         ),
         rx.cond(
             active_page=="about",
-            rx.link("About Me", href="/about", style={"text_decoration": "none"}
-                if active_page=="about" else{}
-                )
+            rx.link("Home", href="/", style={"text_decoration": "none"}),
+            rx.link("projects", href="/projects", style={"text_decoration": "none"}),
         ),
         rx.cond(
             active_page=="projects",
-            rx.link("Projects", href="/projects", style={"text_decoration": "none"} 
-                    if active_page=="projects" else{}
-                    )
+            rx.link("Home", href="/", style={"text_decoration": "none"}),
+            rx.link("About Me", href="/about", style={"text_decoration": "none"})
         ),
         top="0",
         z_index="999",

@@ -39,6 +39,6 @@ def index() -> rx.Component:
 
 
 app = rx.App()
-app.add_page(index)
+app.add_page(index, route="/", title="AngelDev")
 app.add_page(Projects, route="/projects", title="Projects")
-app.add_page(About, route="/projects", title="Projects")
+app.add_page(About, route="/about", title="About Me")
