@@ -3,6 +3,7 @@ import reflex as rx
 from .Components.Navbar import Navbar
 from .Components.Footer import Footer
 
+@rx.page(route="/projects", title="Projects")
 def Projects() -> rx.Component:
     return rx.container(
         rx.vstack(

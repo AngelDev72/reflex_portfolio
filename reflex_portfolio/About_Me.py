@@ -1,9 +1,10 @@
 import reflex as rx
 
-#from reflex_portfolio.Backend import State
+
 from .Components.Navbar import Navbar
 from .Components.Footer import Footer
 
+@rx.page(route="/about", title="About Me")
 def About() -> rx.Component:
     return rx.container(
         rx.vstack(
@@ -14,7 +15,7 @@ def About() -> rx.Component:
                     ),
                 rx.text(
                     """
-                    
+                    Things about me here
                     """
                     )
                 ),
