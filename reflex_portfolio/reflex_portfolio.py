@@ -3,6 +3,7 @@
 import reflex as rx
 
 from rxconfig import config
+#from reflex_portfolio.Backend import State
 from .Components.Navbar import Navbar
 from .Components.Header import Header, Social
 from .Components.Memorium import Memory
@@ -11,13 +12,13 @@ from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
 from .About_Me import About
 from .Projects import Projects
-#from reflex_portfolio.Backend import State
+
 
 
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-        Navbar(),
+        Navbar(active_page="home"),
         rx.center(
             rx.vstack(
                 Header(),

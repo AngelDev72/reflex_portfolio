@@ -1,25 +1,31 @@
 import reflex as rx
-from reflex_portfolio.Backend import State
+#from reflex_portfolio.Backend import State
 from reflex_portfolio.Colors.Colors import Colors
 
 
-def Navbar() -> rx.Component:
+def Navbar(active_page: str) -> rx.Component:
     return rx.hstack(
         rx.text(
             "AngelDev 🐍"
         ),
         rx.spacer(spacing="2"),
         rx.cond(
-            State.is_home,
-            rx.link("Home", href="/", style={"text_decoration": "none"})
+            active_page=="home",
+            rx.link("Home", href="/", style={"text_decoration": "none"} 
+                if active_page=="home" else{}
+                )
         ),
         rx.cond(
-            State.is_about,
-            rx.link("About Me", href="/about", style={"text_decoration": "none"})
+            active_page=="about",
+            rx.link("About Me", href="/about", style={"text_decoration": "none"}
+                if active_page=="about" else{}
+                )
         ),
         rx.cond(
-            State.is_projects,
-            rx.link("Projects", href="/projects", style={"text_decoration": "none"})
+            active_page=="projects",
+            rx.link("Projects", href="/projects", style={"text_decoration": "none"} 
+                    if active_page=="projects" else{}
+                    )
         ),
         top="0",
         z_index="999",
