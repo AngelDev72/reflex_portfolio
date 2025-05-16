@@ -18,9 +18,10 @@ from .Projects import Projects
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-        Navbar(active_page="AngelDev"),
-        rx.center(
+        #Navbar("AngelDev"),
+        rx.flex(
             rx.vstack(
+                Navbar("AngelDev"),
                 Header(),
                 Social(),
                 Bio(),

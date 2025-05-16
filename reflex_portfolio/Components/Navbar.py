@@ -1,50 +1,50 @@
 import reflex as rx
 
-from reflex_portfolio.Colors.Colors import Colors
+from ..Colors.Colors import Colors
 
 
 def Navbar(active_page: str) -> rx.Component:
     pages={
         "AngelDev":[
             (
-                "Projects",
                 "/projects",
+                "Projects",
                 ),
             (
-                "About",
-                "/about"
+                "/about",
+                "About"
                 )
-            ]
+            ],
         "About":[
             (
-                "AngelDev",
                 "/",
+                "AngelDev"
                 ),
             (
-                "Projects",
                 "/projects",
+                "Projects",
                 )
-            ]
+            ],
         "Projects":[
             (
-                "AngelDev",
                 "/",
+                "AngelDev",
                 ),
             (
-                "About",
-                "/about"
+                "/about",
+                "About"
                 )
             ]
     }
     links=[
         rx.link(
-            label,
-            href=url,
-            style={
-                "text_decoration":"none"
-            }
-            for label, url in pages.get(active_page, [])
+            rx.text(label),
+            href=path,
+            style={"text_decoration"=="none"},
             )
+            for group in pages.values()
+            for path, label in group
+            if path != f"/{active_page}" and not (active_page=="AngelDev" and path=="/")
         ]
         
     return rx.hstack(
@@ -52,10 +52,10 @@ def Navbar(active_page: str) -> rx.Component:
             "AngelDev 🐍"
         ),
         rx.spacer(spacing="2"),
-        ),
+        *links,
         top="0",
         z_index="999",
         width="100%",
         background_color=Colors.Navbar.value,
         box_shadow="md"
-    )
+        )

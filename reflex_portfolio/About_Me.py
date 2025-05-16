@@ -8,7 +8,7 @@ from .Components.Footer import Footer
 def About() -> rx.Component:
     return rx.container(
         rx.vstack(
-            Navbar(active_page="about"),
+            Navbar("About"),
             rx.box(
                 rx.heading(
                     "About Me"
