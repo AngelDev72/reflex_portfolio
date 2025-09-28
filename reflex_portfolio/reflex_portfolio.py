@@ -18,7 +18,7 @@ from .Projects import Projects
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-        #Navbar("AngelDev"),
+        #. Portfolio/bin/activateNavbar("AngelDev"),
         rx.flex(
             rx.vstack(
                 Navbar("AngelDev"),
