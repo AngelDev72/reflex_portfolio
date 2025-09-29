@@ -2,8 +2,8 @@ import reflex as rx
 
 def Projects() -> rx.Component:
     return rx.container(
-        rx.hstackstack(
-            rx.vstackstack(
+        rx.hstack(
+            rx.vstack(
                 rx.text(
                     "Some of my current Projects"
                 )
