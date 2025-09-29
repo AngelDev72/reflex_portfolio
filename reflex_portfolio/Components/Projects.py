@@ -13,6 +13,21 @@ def Projects() -> rx.Component:
                 rx.text(""),
                 #rx.link()
             ),rx.spacer(spacing="2"),
-            
+            rx.box(
+                rx.text("Pymon Wiki:"),
+                rx.text(""),
+                #rx.link()
+            ),rx.spacer(spacing="2"),
+            rx.box(
+                rx.text(
+                    "Chick'NTec:"),
+                rx.text(""),
+                #rx.link()
+            ),rx.spacer(spacing="2"),
+            rx.box(
+                rx.text("AviTec:"),
+                rx.text(""),
+                #rx.link()
+            ),rx.spacer(spacing="2"),
         )
     )

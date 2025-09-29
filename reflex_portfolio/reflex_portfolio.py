@@ -10,7 +10,7 @@ from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
-from .Components.Projects.Projects import Projects
+from .Components.Projects import Projects
 
 
 def index() -> rx.Component:
