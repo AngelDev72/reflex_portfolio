@@ -10,9 +10,7 @@ from .Components.Memorium import Memory
 from .Components.Bio import Bio
 from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
-from .About_Me import About
-from .Projects import Projects
-
+from .Components.Projects.Projects import Projects
 
 
 def index() -> rx.Component:
@@ -30,6 +28,7 @@ def index() -> rx.Component:
                     Frames(),
                     Soft()
                     ),
+                Projects(),
                 Memory(),
                 ),
             ),
@@ -41,5 +40,3 @@ def index() -> rx.Component:
 
 app = rx.App()
 app.add_page(index, route="/", title="AngelDev")
-app.add_page(Projects, route="/projects", title="Projects")
-app.add_page(About, route="/about", title="About Me")
