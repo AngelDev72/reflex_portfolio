@@ -11,12 +11,12 @@ from .Components.Bio import Bio
 from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
 from .Components.Projects import Projects
+from .Colors.Colors import Colors
 
 
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.container(
-        #. Portfolio/bin/activateNavbar("AngelDev"),
         rx.flex(
             rx.vstack(
                 Navbar("AngelDev"),
@@ -30,11 +30,15 @@ def index() -> rx.Component:
                     ),
                 Projects(),
                 Memory(),
+                Footer()
                 ),
+            padding_top="50px",
             ),
-        Footer(),
-    max_width="100%"
-    )
+        max_width="100%",
+        max_height="100%",
+        bg= Colors.Bg.value,
+        text_color=Colors.Text.value
+        )
 
 
 

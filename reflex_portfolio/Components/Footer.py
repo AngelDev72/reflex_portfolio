@@ -13,5 +13,7 @@ def Footer() -> rx.Component:
         width="100%",
         margin_y="15px",
         bg=Colors.Footer.value,
-        bottom="0"
+        bottom="0",
+        position="fixed",
+        left="0"
     )

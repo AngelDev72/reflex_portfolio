@@ -6,7 +6,7 @@ def Angel() -> rx.Component:
         radius="full",
         size="7",
         fallback="AS",
-        color_scheme="cyan"
+        color_scheme="cyan",
         ),
 
 def Arturo() -> rx.Component:
