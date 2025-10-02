@@ -16,29 +16,38 @@ from .Colors.Colors import Colors
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.container(
+    return rx.box(
         rx.flex(
-            rx.vstack(
-                Navbar("AngelDev"),
-                Header(),
-                Social(),
-                Bio(),
-                rx.hstack(
-                    Lang(),
-                    Frames(),
-                    Soft()
+        rx.vstack(
+            Navbar("AngelDev"),
+            Header(),
+            Social(),
+            Bio(),
+            rx.hstack(
+                Lang(),
+                Frames(),
+                Soft()
                     ),
-                Projects(),
-                Memory(),
-                Footer()
-                ),
+            Projects(),
+            Memory(),
+            Footer(),
             padding_top="50px",
+            padding_bottom="50px",
+            max_width="1200px",
+            width="100%"
             ),
-        max_width="100%",
-        max_height="100%",
+        padding_top="25px",
+        direction="column",
+        width="100%",
+        heigth="100%",
+        ),
+        width="100%",
+        min_height="100hv",
         bg= Colors.Bg.value,
-        text_color=Colors.Text.value
-        )
+        text_color=Colors.Text.value,
+        
+    )
+
 
 
 
