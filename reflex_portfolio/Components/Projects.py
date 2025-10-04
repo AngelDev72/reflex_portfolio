@@ -5,12 +5,18 @@ def Projects() -> rx.Component:
         rx.vstack(
                 rx.text(
                     "Some of my current Projects"
-                )
+                ),
+                padding_bottom="2em",
             ),
             rx.hstack(
             rx.box(
                 rx.text("Pymon:"),
-                rx.text(""),
+                rx.text("""
+                        Game design to have an inluence of AI later on the go. 
+                        Pymon introduces 160 species of Pymons.
+                        You may notice some similarity to Pokémon, 
+                        but I tried to make it the most original as posible without making it too similar also.
+                        """),
                 #rx.link()
             ),rx.spacer(spacing="2"),
             rx.box(
@@ -24,11 +30,13 @@ def Projects() -> rx.Component:
                 rx.text(""),
                 #rx.link()
             ),rx.spacer(spacing="2"),
-            rx.box(
-                rx.text("AviTec:"),
-                rx.text(""),
-                #rx.link()
-            ),rx.spacer(spacing="2"),
-            flex_wrap="wrap"
-        )
+            #rx.box(
+            #    rx.text("AviTec:"),
+            #    rx.text(""),
+            #    #rx.link()
+            #),rx.spacer(spacing="2"),
+        ),
+            align="center",
+            flex_wrap="wrap",
+            padding_top="2em",
     )

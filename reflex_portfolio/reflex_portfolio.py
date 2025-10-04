@@ -35,26 +35,16 @@ def index() -> rx.Component:
                 align="center",
             ),
             align="center",
-            padding_top="50px",
-            padding_bottom="50px",
-            max_width="1200px",
+            padding_top="4em",
             width="100%"
             ),
-        justify="center",
-        align="center",
-        padding_top="25px",
-        direction="column",
-        width="100%",
-        heigth="100%",
         ),
         Footer(),
         flex_direction="column",
         align="center",
         width="100%",
-        min_height="100hv",
-        bg= Colors.Bg.value,
         text_color=Colors.Text.value,
-        
+        bg= Colors.Bg.value,
     )
 
 
