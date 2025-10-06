@@ -1,4 +1,5 @@
 import reflex as rx
+from ..Styles.Styles import Size
 
 def Projects() -> rx.Component:
     return rx.container(
@@ -6,7 +7,7 @@ def Projects() -> rx.Component:
                 rx.text(
                     "Some of my current Projects"
                 ),
-                padding_bottom="2em",
+                padding_bottom=Size.BIG.value,
             ),
             rx.hstack(
             rx.box(
@@ -21,22 +22,28 @@ def Projects() -> rx.Component:
             ),rx.spacer(spacing="2"),
             rx.box(
                 rx.text("Pymon Wiki:"),
-                rx.text(""),
+                rx.text("""
+                        
+                        """),
                 #rx.link()
             ),rx.spacer(spacing="2"),
             rx.box(
                 rx.text(
                     "Chick'NTec:"),
-                rx.text(""),
+                rx.text("""
+                        
+                        """),
                 #rx.link()
             ),rx.spacer(spacing="2"),
-            #rx.box(
-            #    rx.text("AviTec:"),
-            #    rx.text(""),
+            rx.box(
+                rx.text("AviTec:"),
+                rx.text("""
+                        
+                        """),
             #    #rx.link()
-            #),rx.spacer(spacing="2"),
+            ),rx.spacer(spacing="2"),
         ),
             align="center",
             flex_wrap="wrap",
-            padding_top="2em",
+            padding_top=Size.XX.value,
     )

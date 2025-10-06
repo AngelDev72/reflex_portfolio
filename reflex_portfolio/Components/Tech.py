@@ -1,5 +1,5 @@
 import reflex as rx
-from reflex_portfolio.Components.Image import Tech_Image as Tech
+from .Image import Tech_Image as Tech
 
 def Language() -> rx.Component:
     return rx.vstack(
@@ -23,6 +23,11 @@ def Language() -> rx.Component:
                 "55"
                 ),
             Tech(
+                "/Img/Language/micropython.png",
+                "50",
+                "50"
+                ),
+            Tech(
                 "/Img/Language/css3.png",
                 "50",
                 "50"
@@ -33,8 +38,8 @@ def Language() -> rx.Component:
                 "50"
                 ),
                 flex_wrap="wrap",
-                spacing="2"
-                #max_width="33%"
+                flex_direccion="column",
+                spacing="2",
             )
         )
 
@@ -76,7 +81,6 @@ def Framework() -> rx.Component:
                 ),
                 flex_wrap="wrap",
                 spacing="2",
-                #max_width="33%"
             )
         )
 
@@ -97,6 +101,7 @@ def Technology() -> rx.Component:
                 "50"
                 ),
                 flex_wrap="wrap",
-                spacing="2"
+                spacing="2",
+                
             )
         )

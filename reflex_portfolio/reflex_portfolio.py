@@ -12,6 +12,7 @@ from .Components.Footer import Footer
 from .Components.Tech import Language as Lang, Framework as Frames, Technology as Soft
 from .Components.Projects import Projects
 from .Colors.Colors import Colors
+from .Styles.Styles import Size
 
 
 def index() -> rx.Component:
@@ -35,7 +36,7 @@ def index() -> rx.Component:
                 align="center",
             ),
             align="center",
-            padding_top="4em",
+            padding_top=Size.XX.value,
             width="100%"
             ),
         ),
@@ -44,7 +45,9 @@ def index() -> rx.Component:
         align="center",
         width="100%",
         text_color=Colors.Text.value,
+        padding_bottom=Size.BIG.value,
         bg= Colors.Bg.value,
+        
     )
 
 

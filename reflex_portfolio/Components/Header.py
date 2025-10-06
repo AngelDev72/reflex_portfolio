@@ -1,6 +1,7 @@
 import reflex as rx
 from .Avatar import Angel
 from .Image import Link_Image as Link
+from ..Styles.Styles import Size
 
 
 def Header() -> rx.Component:
@@ -9,7 +10,8 @@ def Header() -> rx.Component:
             Angel(),
             rx.text(
                 "@AngelDev72"
-            )
+            ),
+            #text_size=Size.BIG.value,
         )
     )
 

@@ -1,7 +1,9 @@
-import reflex as rx
+from enum import Enum
 
-class text_style():
-    pass
 
-class image_style():
-    pass
+class Size(Enum):
+    SMALL="0.5em"
+    MEDIUM="0.8em"
+    BIG="1.5em"
+    EXTRA="2em"
+    XX="4em"
