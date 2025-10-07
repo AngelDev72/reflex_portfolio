@@ -15,8 +15,11 @@ def Memory() -> rx.Component:
                 Your lessons  will never be forgotten..."""
             ),
             rx.text(
-                "R.I.P Arturo Moreno Salazar."
+                "R.I.P."
             ),
+            rx.text(
+                "Arturo Moreno Salazar."
+                ),
             align="center"
         )
     )
