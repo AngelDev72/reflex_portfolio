@@ -1,5 +1,5 @@
 import reflex as rx
-from reflex_portfolio.Colors.Colors import Colors
+from ..Colors.Colors import Colors
 
 def Footer() -> rx.Component:
     return rx.vstack(
